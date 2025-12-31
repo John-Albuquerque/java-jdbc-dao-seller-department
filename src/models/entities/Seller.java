@@ -56,7 +56,7 @@ import java.util.Objects;
         }
 
         public void setBirthDate(LocalDate birthDate) {
-            birthDate = birthDate;
+            this.birthDate = birthDate;
         }
 
         public Double getBaseSalary() {
