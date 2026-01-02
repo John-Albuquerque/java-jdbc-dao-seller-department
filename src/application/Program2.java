@@ -17,7 +17,7 @@ public class Program2 {
 
 
         System.out.println("\n=== TEST 1: Department findAll ====");
-        List list = departmentDao.findAll();
+        List<Department> list = departmentDao.findAll();
         list.forEach(System.out::println);
 
         System.out.println("\n=== TEST 2: Department findById ====");
@@ -29,6 +29,13 @@ public class Program2 {
         int id = sc.nextInt();
         departmentDao.deletedById(id);
         System.out.println("Delete completed");
+
+        System.out.println("\n=== TEST 4: department update ====");
+        dep.setName("Games");
+        dep.setId(2);
+        departmentDao.update(dep);
+        System.out.println("Update completed");
+
 
 
         sc.close();
