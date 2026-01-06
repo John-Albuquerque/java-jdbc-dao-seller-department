@@ -1,3 +1,5 @@
+# ignorar db.properties
+db.properties
 
 # Ignorar pasta do IntelliJ
 .idea/
